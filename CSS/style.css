@@ -1,0 +1,163 @@
+:root {
+    --primary-blue: #0A192F;
+    --secondary-blue: #112240;
+    --accent-cyan: #64FFDA;
+    --text-white: #CCD6F6;
+    --text-muted: #8892B0;
+    --bg-light: #F8F9FA;
+}
+
+body {
+    background-color: var(--bg-light);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Navbar overrides */
+.navbar-custom {
+    background-color: var(--primary-blue) !important;
+}
+
+.navbar-custom .navbar-brand {
+    color: var(--accent-cyan);
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.navbar-custom .nav-link {
+    color: var(--text-white) !important;
+    transition: color 0.3s;
+}
+
+.navbar-custom .nav-link:hover {
+    color: var(--accent-cyan) !important;
+}
+
+/* ASP.NET Menu styling integration */
+.menu-custom {
+    width: 100%;
+}
+.menu-custom ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.menu-custom ul li {
+    padding: 0 15px;
+}
+.menu-custom ul li a {
+    color: var(--text-white) !important;
+    text-decoration: none;
+    font-weight: 500;
+}
+.menu-custom ul li a:hover {
+    color: var(--accent-cyan) !important;
+}
+
+/* Sidebar for Admin */
+.admin-sidebar {
+    background-color: var(--secondary-blue);
+    min-height: 100vh;
+    padding-top: 20px;
+    color: var(--text-white);
+}
+
+.admin-sidebar a {
+    color: var(--text-white) !important;
+    text-decoration: none;
+}
+
+.admin-sidebar a:hover {
+    color: var(--accent-cyan) !important;
+}
+
+/* ASP.NET TreeView styling integration */
+.treeview-custom {
+    color: var(--text-white);
+}
+.treeview-custom a {
+    padding: 10px;
+    display: block;
+    border-radius: 4px;
+}
+.treeview-custom a:hover {
+    background-color: rgba(100, 255, 218, 0.1);
+}
+
+/* Cards and Tables */
+.card-custom {
+    border-top: 4px solid var(--accent-cyan);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.card-custom:hover {
+    transform: translateY(-5px);
+}
+
+.table-custom {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.table-custom thead {
+    background-color: var(--secondary-blue);
+    color: var(--text-white);
+}
+
+/* Buttons */
+.btn-cyan {
+    background-color: var(--accent-cyan);
+    color: var(--primary-blue);
+    font-weight: bold;
+    border: none;
+}
+.btn-cyan:hover {
+    background-color: #52e0c0;
+    color: var(--primary-blue);
+}
+
+.btn-outline-cyan {
+    border-color: var(--accent-cyan);
+    color: var(--accent-cyan);
+}
+.btn-outline-cyan:hover {
+    background-color: var(--accent-cyan);
+    color: var(--primary-blue);
+}
+
+/* Validation */
+.error-msg {
+    color: #ff4d4f;
+    font-size: 0.875em;
+    margin-top: 5px;
+    display: block;
+}
+
+/* GridView and DetailsView */
+.gridview-custom th {
+    background-color: var(--primary-blue);
+    color: white;
+    padding: 10px;
+}
+.gridview-custom td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+.gridview-custom tr:hover {
+    background-color: #f1f1f1;
+}
+
+.detailsview-custom {
+    width: 100%;
+}
+.detailsview-custom th {
+    background-color: var(--bg-light);
+    padding: 10px;
+    width: 30%;
+}
+.detailsview-custom td {
+    padding: 10px;
+}

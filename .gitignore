@@ -1,0 +1,48 @@
+# User-specific files
+*.rsuser
+*.suo
+*.user
+*.userbg
+*.usertasks
+
+# Visual Studio 2015/2017/2019/2022 cache/options directory
+.vs/
+
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Re]leases/
+x64/
+x86/
+[Aa]rm/
+[Aa]rm64/
+bld/
+[Bi]n/
+[Oo]bj/
+[Log]s/
+[Ff]xCop/
+
+# NuGet Packages
+*.nupkg
+# The packages folder can be ignored if we want NuGet to restore them
+packages/
+# Except build/, tools/, etc. under packages if needed, but usually we ignore all
+!**/packages/build/
+
+# Visual Studio tools
+_ReSharper*/
+*.[Re]Sharper
+*.DotSettings.user
+
+# Backup and temporary files
+~*
+*~
+*.bak
+*.tmp
+*.err
+
+# Windows files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
